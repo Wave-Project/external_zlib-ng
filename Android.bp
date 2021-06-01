@@ -1,7 +1,5 @@
 srcs_arm = [
     "arch/arm/armfeature.c",
-    "arch/arm/crc32_acle.c",
-    "arch/arm/insert_string_acle.c",
     "arch/arm/adler32_neon.c",
     "arch/arm/chunkset_neon.c",
     "arch/arm/slide_neon.c",
@@ -9,7 +7,6 @@ srcs_arm = [
 
 // Not all CPUs will support these features, but compatibility is checked at runtime.
 cflags_arm = [
-    "-DARM_ACLE_CRC_HASH",
     "-DARM_FEATURES",
     "-DARM_NEON_ADLER32",
     "-DARM_NEON_CHUNKSET",
